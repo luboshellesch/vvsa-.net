@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/lubos/projects/web/web.csproj": {}
+    "/Users/lubos/vvsa/web/web.csproj": {}
   },
   "projects": {
-    "/Users/lubos/projects/web/web.csproj": {
+    "/Users/lubos/vvsa/web/web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/lubos/projects/web/web.csproj",
+        "projectUniqueName": "/Users/lubos/vvsa/web/web.csproj",
         "projectName": "web",
-        "projectPath": "/Users/lubos/projects/web/web.csproj",
+        "projectPath": "/Users/lubos/vvsa/web/web.csproj",
         "packagesPath": "/Users/lubos/.nuget/packages/",
-        "outputPath": "/Users/lubos/projects/web/obj/",
+        "outputPath": "/Users/lubos/vvsa/web/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/lubos/.nuget/NuGet/NuGet.Config"
@@ -43,19 +43,25 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
-            "Microsoft.EntityFrameworkCore.Tools": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
+            "Microsoft.NET.Test.Sdk": {
               "target": "Package",
-              "version": "[8.0.10, )"
+              "version": "[17.8.0, )"
             },
-            "MySql.EntityFrameworkCore": {
+            "NUnit": {
               "target": "Package",
-              "version": "[8.0.8, )"
+              "version": "[3.14.0, )"
             },
-            "Swashbuckle.AspNetCore": {
+            "NUnit.Analyzers": {
               "target": "Package",
-              "version": "[6.6.2, )"
+              "version": "[3.9.0, )"
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[6.0.0, )"
             }
           },
           "imports": [
@@ -70,9 +76,6 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
